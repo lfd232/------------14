@@ -1,16 +1,27 @@
 const form = document.forms.user;
-form.addEventListener("submit", function(e) {
+let ad = document.querySelector('.test')
+const body = {};
+form.addEventListener("submit",  function(e) {
 	e.preventDefault();
-	const body = {}
+	 body  
 	for (let i = 0; i < form.elements.length; i++) {
 		let el = form.elements[i];
 		if (el.name) {
 			body[el.name] = el.value;
 		}
 	}
-	document.writeln(body.card)
-})
+	console.log(document.getElementById('card-number1'));
+	
+	document.getElementById('card-number1').innerText = body.cardnumber
+		document.getElementById('name1').innerText = body.name
+				document.getElementById('number').innerText = body.age
 
+
+	// ad.textContent = body.card-number
+	// console.log(ad);
+	console.log(body)
+	
+})
 
 
 // document.getElementById('card-number').addEventListener('input', function (e) {

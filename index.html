@@ -10,20 +10,22 @@
     
     <div class="card">
   <div class="card-chip"></div>
-  <div class="card-number">0000 1234 5678 9012</div>
+  <div class="card-number" id = "card-number1">0000 1234 5678 9012</div>
   <div class="card-info">
-    <span>IVAN IVANOV</span>
-    <span>12/28</span>
+    <span id="name1">IVAN IVANOV</span>
+    <span id = "number"></spa>
+    <span class="test"></span>
   </div>
 </div>
 
 
     <form id="user">
         
-	<input type="text" id="card-number" placeholder="0000 0000 0000 0000" maxlength="16" minlength="16">
-	<input type="email" name="email" placeholder="misha">
+	<input type="text" name="cardnumber" placeholder="0000 0000 0000 0000" maxlength="16" minlength="16">
+	<!-- <input type="email" name="email" placeholder="misha"> -->
 	<input type="number" name="age" placeholder="03/21">
     <input type="number" name="num" placeholder="visa">
+    <input type="text" name ="name" placeholder="ivan ivanov">
 	<select name="english">
 		<option>мир</option>
 		<option>visa</option>
@@ -31,7 +33,7 @@
 		
 	</select>
 	<button type="submit">Отправить</button>
-    
+    <section></section>
     
 </form>
 <script src="app.js"></script>
